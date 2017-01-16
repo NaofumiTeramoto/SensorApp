@@ -105,9 +105,10 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
                 if(flag==0) {
                     try {
 
-                        String filePath = Environment.getDataDirectory()+"/test.txt";
+                        String filePath = "test.txt";
+//                        String filePath = Environment.getDataDirectory()+"/test.txt";
                         File file = new File(filePath);
-                        file.getParentFile().mkdir();
+//                        file.getParentFile().mkdir();
 
                         FileOutputStream fos =
                                 openFileOutput(filePath, Context.MODE_PRIVATE);
